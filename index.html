@@ -433,8 +433,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
       <div class="col-12 mt-4">
-        <p class="text-sm  text-white  opacity-8 mb-0 text-center"> All rights reserved. Copyright © <script>
-          document.write(new Date().getFullYear())
+        <p class="text-sm  text-white  opacity-8 mb-0 text-center"> All rights reserved. Copyright © <span id="yearFooter"></span>
+
+        <script>
+          const date = new Date();
+          const year = date.getFullYear();
+          document.getElementById("yearFooter").innerHTML = year;
         </script> Coded Design System by <a href="https://www.creative-tim.com/" class=" text-white " target="_blank">Creative Tim</a> and <a href="https://genez.io" class=" text-white "  target="_blank">genezio</a> </p>
       </div>
     </div>
